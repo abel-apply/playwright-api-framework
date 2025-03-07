@@ -1,0 +1,29 @@
+{
+  "name": "playwright-api-framework",
+  "version": "1.0.0",
+  "description": "API Testing Framework using Playwright, Cucumber, and TypeScript",
+  "scripts": {
+    "test": "cucumber-js || true",
+    "report": "ts-node src/utils/report-generator.ts",
+    "test:report": "npm test && npm run report",
+    "generate-docs": "ts-node src/support/generate-step-docs.ts && open docs/steps.html"
+  },
+  "keywords": [
+    "playwright",
+    "cucumber",
+    "typescript",
+    "api",
+    "testing"
+  ],
+  "devDependencies": {
+    "@cucumber/cucumber": "^11.1.0",
+    "@cucumber/pretty-formatter": "^1.0.1",
+    "@playwright/test": "^1.49.0",
+    "@types/cucumber": "^7.0.3",
+    "@types/node": "^22.10.1",
+    "cucumber-html-reporter": "^7.2.0",
+    "playwright": "^1.49.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}
